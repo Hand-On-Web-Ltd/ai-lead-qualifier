@@ -1,0 +1,48 @@
+{
+  "criteria": {
+    "budget": {
+      "weight": 30,
+      "thresholds": {
+        "high": { "min": 10000, "score": 100 },
+        "medium": { "min": 3000, "score": 60 },
+        "low": { "min": 500, "score": 30 },
+        "unknown": { "score": 15 }
+      }
+    },
+    "timeline": {
+      "weight": 25,
+      "thresholds": {
+        "immediate": { "maxWeeks": 2, "score": 100 },
+        "short": { "maxWeeks": 8, "score": 75 },
+        "medium": { "maxWeeks": 24, "score": 45 },
+        "long": { "maxWeeks": 52, "score": 20 },
+        "unknown": { "score": 10 }
+      }
+    },
+    "companySize": {
+      "weight": 20,
+      "thresholds": {
+        "enterprise": { "min": 200, "score": 70 },
+        "midMarket": { "min": 20, "score": 100 },
+        "small": { "min": 5, "score": 80 },
+        "micro": { "min": 1, "score": 50 },
+        "unknown": { "score": 15 }
+      }
+    },
+    "needClarity": {
+      "weight": 25,
+      "thresholds": {
+        "specific": { "score": 100 },
+        "general": { "score": 55 },
+        "vague": { "score": 25 },
+        "unknown": { "score": 10 }
+      }
+    }
+  },
+  "labels": {
+    "hot": { "min": 75, "label": "🔥 Hot Lead" },
+    "warm": { "min": 50, "label": "🌤️ Warm Lead" },
+    "cool": { "min": 25, "label": "❄️ Cool Lead" },
+    "cold": { "min": 0, "label": "🧊 Cold Lead" }
+  }
+}
