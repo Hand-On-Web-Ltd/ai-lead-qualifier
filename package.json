@@ -1,0 +1,26 @@
+{
+  "name": "@hand-on-web/ai-lead-qualifier",
+  "version": "1.0.0",
+  "description": "AI-powered lead qualification chatbot that scores prospects through natural conversation",
+  "main": "server.js",
+  "homepage": "https://www.handonweb.com",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "lead-qualification",
+    "chatbot",
+    "sales",
+    "openai",
+    "nodejs",
+    "crm"
+  ],
+  "author": "Hand On Web Ltd <outreach@handonweb.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.77.0"
+  }
+}
