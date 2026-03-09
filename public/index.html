@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Lead Qualifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>💬 Lead Qualifier</h1>
+      <p>Tell us about your project and we'll see how we can help</p>
+    </div>
+
+    <div id="messages">
+      <div class="msg bot">
+        <strong>Bot:</strong> Hey there! 👋 I'd love to learn about your project. What are you looking to build or improve?
+      </div>
+    </div>
+
+    <div id="qualificationCard" class="qualification-card" style="display:none;">
+      <h3 id="qualLabel"></h3>
+      <div id="qualScore" class="score"></div>
+      <p id="qualSummary"></p>
+      <div id="qualBreakdown" class="breakdown"></div>
+    </div>
+
+    <div class="input-row">
+      <input type="text" id="messageInput" placeholder="Type your message..." onkeydown="if(event.key==='Enter')sendMessage()">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
